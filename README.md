@@ -1,3 +1,83 @@
+# AONWeb: Web3-Native AI Framework
+
+AONWeb is a cutting-edge framework that seamlessly integrates Web3 capabilities with AI functionalities, providing a robust foundation for decentralized AI applications.
+
+## Core Features
+
+### Web3 Integration
+- Smart contract interaction with multiple specialized contracts (AonAppPoint, AonUser, AonAiModel, etc.)
+- Wallet connectivity and authentication
+- Token management and reward systems
+- Decentralized user management
+
+### AI Capabilities
+- Integration with state-of-the-art AI models (including Stable Diffusion)
+- Customizable AI parameters and configurations
+- Support for various input/output formats
+- Scalable AI execution through clustered architecture
+
+### Technical Architecture
+- Modular design with clear separation of concerns
+- Environment-specific configurations (development/production)
+- Cross-domain storage solutions
+- Comprehensive error handling and logging
+- Telegram Web App integration
+
+## Key Components
+
+### Smart Contracts
+- `AonAppPoint`: Application point management
+- `AonRewardPoint`: Reward system management
+- `AonUser`: User identity and permissions
+- `AonAiModel`: AI model registry and management
+- `AonAiCluster`: Distributed AI processing
+- `AonAiExcutor`: AI execution orchestration
+
+### Core Classes
+- `AI`: AI model interaction and management
+- `AIOptions`: Configuration for AI operations
+- `User`: User management and authentication
+- `ListOptions`: Data query and pagination
+- `Options`: System-wide configuration
+
+## Technical Specifications
+- Built with modern JavaScript/TypeScript
+- Supports multiple blockchain networks
+- RESTful API architecture
+- Real-time data processing
+- Secure storage handling
+
+## Use Cases
+- Decentralized AI services
+- Token-gated AI capabilities
+- AI-powered Web3 applications
+- Custom AI model deployment
+- Cross-chain AI interactions
+
+## Future Potential
+The framework is designed to evolve into a comprehensive Web3 AI Agent system, supporting:
+- Autonomous AI agents
+- Agent-to-agent communication
+- Decentralized AI marketplaces
+- Token-based governance
+- AI model sharing and collaboration
+
+## Security Features
+- Secure wallet integration
+- Protected API endpoints
+- Cross-domain security
+- Data encryption
+- Smart contract safety checks
+
+## Integration Capabilities
+- Easy integration with existing Web3 projects
+- Support for multiple AI models
+- Extensible plugin system
+- Custom contract integration
+- Third-party service connectivity
+
+AONWeb represents the convergence of Web3 and AI technologies, offering a foundation for building the next generation of decentralized AI applications. Its modular architecture and comprehensive feature set make it an ideal choice for developers looking to create innovative Web3-native AI solutions.
+
 # AONWEB
 
 aonweb - JavaScript sdk for AON
@@ -74,8 +154,6 @@ function prediction() {
 }
 
 prediction();
-
-```
 
 ### Constructor
 
