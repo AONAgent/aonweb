@@ -1,11 +1,11 @@
 # AONWeb: Web3-Native AI Framework
 
-AONWeb is a cutting-edge framework that seamlessly integrates Web3 capabilities with AI functionalities, providing a robust foundation for decentralized AI applications.
+AONWeb is a cutting-edge framework that seamlessly integrates Web3 capabilities with AI functionalities, providing a robust foundation for decentralized AI Agents.
 
 ## Core Features
 
 ### Web3 Integration
-- Smart contract interaction with multiple specialized contracts (AonAppPoint, AonUser, AonAiModel, etc.)
+- Smart contract interaction with multiple specialized contracts (AonAgentPoint, AonUser, AonAiModel, etc.)
 - Wallet connectivity and authentication
 - Token management and reward systems
 - Decentralized user management
@@ -26,7 +26,7 @@ AONWeb is a cutting-edge framework that seamlessly integrates Web3 capabilities 
 ## Key Components
 
 ### Smart Contracts
-- `AonAppPoint`: Application point management
+- `AonAgentPoint`: Agent point management
 - `AonRewardPoint`: Reward system management
 - `AonUser`: User identity and permissions
 - `AonAiModel`: AI model registry and management
@@ -48,15 +48,15 @@ AONWeb is a cutting-edge framework that seamlessly integrates Web3 capabilities 
 - Secure storage handling
 
 ## Use Cases
-- Decentralized AI services
+- Decentralized AI Agents
 - Token-gated AI capabilities
-- AI-powered Web3 applications
+- AI-powered Web3 Agents
 - Custom AI model deployment
 - Cross-chain AI interactions
 
 ## Future Potential
 The framework is designed to evolve into a comprehensive Web3 AI Agent system, supporting:
-- Autonomous AI agents
+- Autonomous AI Agents
 - Agent-to-agent communication
 - Decentralized AI marketplaces
 - Token-based governance
@@ -119,7 +119,7 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-AONWeb represents the convergence of Web3 and AI technologies, offering a foundation for building the next generation of decentralized AI applications. Its modular architecture and comprehensive feature set make it an ideal choice for developers looking to create innovative Web3-native AI solutions.
+AONWeb represents the convergence of Web3 and AI technologies, offering a robust foundation for building the next generation of decentralized AI Agents. Its modular architecture and comprehensive feature set make it an ideal choice for developers looking to create innovative Web3-native AI solutions.
 
 # AONWEB
 
