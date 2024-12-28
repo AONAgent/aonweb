@@ -76,6 +76,49 @@ The framework is designed to evolve into a comprehensive Web3 AI Agent system, s
 - Custom contract integration
 - Third-party service connectivity
 
+## Quick Start
+
+### Installation
+```bash
+npm install aonweb
+```
+
+### Basic Usage
+```javascript
+import { AI } from 'aonweb';
+
+// Initialize AI instance
+const ai = new AI({
+    apiKey: 'your-api-key',
+    network: 'mainnet'
+});
+
+// Example: Image Generation
+async function generateImage() {
+    const result = await ai.generateImage({
+        prompt: 'A beautiful landscape with mountains',
+        model: 'stable-diffusion-v2',
+        size: '1024x1024'
+    });
+    console.log('Generated image URL:', result.url);
+}
+
+// Example: Text Generation
+async function generateText() {
+    const result = await ai.generateText({
+        prompt: 'Write a story about AI and blockchain',
+        maxTokens: 500
+    });
+    console.log('Generated text:', result.text);
+}
+```
+
+## Contributing
+We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 AONWeb represents the convergence of Web3 and AI technologies, offering a foundation for building the next generation of decentralized AI applications. Its modular architecture and comprehensive feature set make it an ideal choice for developers looking to create innovative Web3-native AI solutions.
 
 # AONWEB
