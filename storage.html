@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Storage iframe</title>
+  <script>
+    window.addEventListener('message', (event) => {
+        console.log("addEventListener message",event)
+      const { key, value, action } = event.data;
+      if (action === 'set') {
+        localStorage.setItem(key, value);
+      } else if (action === 'get') {
+        const data = localStorage.getItem(key);
+        event.source.postMessage({ key, value: data, action: 'response' }, event.origin);
+      }
+    });
+  </script>
+</head>
+<body>
+</body>
+</html>

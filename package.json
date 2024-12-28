@@ -1,0 +1,25 @@
+{
+  "name": "aonweb",
+  "version": "2.0.3",
+  "type": "module",
+  "main": "dist/aon-web.cjs.js",
+  "module": "dist/aon-web.es.js",
+  "browser": "dist/aon-web.umd.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@fingerprintjs/fingerprintjs": "^4.4.0",
+    "@supabase/supabase-js": "^2.45.1",
+    "bignumber.js": "^9.1.2",
+    "crypto-js": "^4.2.0",
+    "moment": "^2.30.1",
+    "uuid": "^9.0.1",
+    "web3": "^4.8.0",
+    "web3-eth-accounts": "^4.1.2"
+  },
+  "devDependencies": {
+    "vite": "^5.2.0"
+  }
+}

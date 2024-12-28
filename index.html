@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  </head>
+  <body>
+    <script src="./dist/aon-web.umd.js"></script>
+    <script>
+      const getVersion = async () => {
+        console.log("getVersion")
+          try {
+              const {getVersion} = aonweb
+
+              console.log("getVersion",getVersion())
+          } catch (e) {
+              console.log(e)
+          }
+      }
+      getVersion()
+      console.log(new Date())
+
+      const log = async () => {
+        console.log("log")
+          try {
+            const {reportLog} = aonweb
+            reportLog({
+                version:'1.0.8',
+                time:new Date(),
+                user_id:localStorage.getItem("aon_logedUserId"),
+                method:"index out"
+            })
+          } catch (e) {
+              console.log(e)
+          }
+      }
+
+      const list = async () => {
+        console.log("list")
+          try {
+              const {AIOptions,AI,ListOptions} = aonweb
+
+              console.log("ListOptions",ListOptions)
+              const ai_options = new AIOptions({
+                appId :'9TfW8n5CCtLEmp4HbXUx1bnt_ZzCUK_VxhtSOi44oQkA',
+              })
+
+              const aonet = new AI(ai_options)
+
+              const list_options = new ListOptions({
+                user_id :"0x9e96dF7f42180098528E48FE6962206B0053626E"
+              })
+              console.log("list data", list_options)
+              let response = await aonet.list()
+              console.log("list response aaaaa", response)
+          } catch (e) {
+              console.log(e)
+          }
+      }
+
+      const prediction = async () => {
+        console.log("prediction")
+          try {
+              const {Web3Provider,AIOptions,detectEthereumProvider,AI} = aonweb
+
+              const ai_options = new AIOptions({
+                appId :'9TfW8n5CCtLEmp4HbXUx1bnt_ZzCUK_VxhtSOi44oQkA'
+              })
+
+              const aonet = new AI(ai_options)
+
+              const data = {
+                input:{
+                    "cfg": 3.5,
+                    "steps": 28,
+                    "prompt": "a girl",
+                    "aspect_ratio": "9:16",
+                    "output_format": "png",
+                    "output_quality": 90,
+                    "negative_prompt": "",
+                    "prompt_strength": 0.85
+                }
+              }
+              console.log("formSubmit data", data)
+              let price = 10
+              let response = await aonet.prediction("/predictions/ai/stable-diffusion-3", data,price)
+              console.log("formSubmit response aaaaa", response)
+          } catch (e) {
+              console.log(e)
+          }
+      }
+      const login = async () => {
+        console.log("login")
+          try {
+              const {User,AIOptions} = aonweb
+
+              // const ai_options = new Options({
+              // })
+
+
+              //User 的使用方法
+              let user = new User()
+              let account = await user.login("userid","inviter",(account,userId,error) => {
+                console.log("getWeb3 userId",account,userId)
+                console.log("getWeb3 error",error)
+              })
+              console.log("getWeb3 account",account)
+              
+          } catch (e) {
+              console.log(e)
+          }
+      }
+
+      const balance = async () => {
+        console.log("balance")
+          try {
+              const {User} = aonweb
+
+              //User 的使用方法
+              let user = new User()
+              let result = await user.balance()
+              console.log("getWeb3 account",result)
+              return result
+              
+          } catch (e) {
+              console.log(e)
+          }
+      }
+
+      const islogin = async () => {
+        console.log("islogin")
+          try {
+              const {User} = aonweb
+
+              //User 的使用方法
+              let user = new User()
+              let result = await user.islogin()
+              console.log("getWeb3 islogin",result)
+              return result
+              
+          } catch (e) {
+              console.log(e)
+          }
+      }
+
+      const regiter = async () => {
+        console.log("regiter")
+          try {
+              const {User} = aonweb
+
+              //User 的使用方法
+              let user = new User()
+              let result = await user.email_signUp("brent_company@163.com","12345678")
+              console.log("getWeb3 regiter",result)
+              return result
+              
+          } catch (e) {
+              console.log(e)
+          }
+      }
+
+      const verifyOtp = async () => {
+        console.log("verifyOtp")
+          try {
+              const {User} = aonweb
+
+              //User 的使用方法
+              let user = new User()
+              let result = await user.verifyOtp("brent_company@163.com","989561","signup")
+              console.log("getWeb3 regiter",result)
+              return result
+              
+          } catch (e) {
+              console.log(e)
+          }
+      }
+
+      const bindEmail = async () => {
+        console.log("bindEmail")
+          try {
+              const {User} = aonweb
+
+              //User 的使用方法
+              let user = new User()
+              let result = await user.bindEmail("brent_company@163.com")
+              console.log("getWeb3 bindEmail",result)
+              return result
+              
+          } catch (e) {
+              console.log(e)
+          }
+      }
+
+      const bindTwitter = async () => {
+        console.log("bindTwitter")
+          try {
+              const {User} = aonweb
+
+              //User 的使用方法
+              let user = new User()
+              let result = await user.linkTwitter()
+              console.log("getWeb3 bindTwitter",result)
+              return result
+              
+          } catch (e) {
+              console.log(e)
+          }
+      }
+
+      
+
+
+      const getOwnedUsers = async () => {
+        console.log("getOwnedUsers")
+          try {
+              const {User} = aonweb
+
+              //User 的使用方法
+              let user = new User()
+              let account = await user.getOwnedUsers()
+              console.log("getWeb3 getOwnedUsers",account)
+              
+          } catch (e) {
+              console.log(e)
+          }
+      }
+
+      const detect = async () => {
+        let time = new Date().getTime()
+        console.log(`detect in time = ${time}`)
+          try {
+              const {detectEthereumProvider} = aonweb
+              let ethereum = await detectEthereumProvider()
+              console.log(`detect out time = ${ new Date().getTime() - time}`)
+          } catch (e) {
+              console.log(e)
+          }
+      }
+
+      let userAgent = navigator.userAgent;
+      let browserName = navigator.appName;
+      let browserVersion = navigator.appVersion;
+            
+
+      
+  </script>
+
+    <div id="root">
+      <p id="test">Hi </p>
+      <p id="addr"></p>
+      <p id="key"></p>
+      <div id="initData" style="overflow-wrap: break-word"></div>
+      <button type="button" onclick="login()">login</button>
+      <button type="button" onclick="prediction()">prediction</button>
+      <button type="button" onclick="getOwnedUsers()">getOwnedUsers</button>
+      <button type="button" onclick="list()">list</button>
+      <button type="button" onclick="balance()">balance</button>
+      <button type="button" onclick="islogin()">islogin</button>
+      <button type="button" onclick="detect()">detectEthereumProvider</button>
+      <button type="button" onclick="log()">log</button>
+      <button type="button" onclick="regiter()">regiter</button>
+      <button type="button" onclick="verifyOtp()">verifyOtp</button>
+      <button type="button" onclick="bindEmail()">bindEmail</button>
+      <button type="button" onclick="bindTwitter()">bindTwitter</button>
+      
+    </div>
+    <!-- <script type="module" src="/src/main.js"></script> -->
+  </body>
+</html>
