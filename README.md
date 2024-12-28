@@ -1,4 +1,4 @@
-# AONWeb: Web3-Native AI Framework
+# AONWeb: Web3-Native AI Agent Framework
 
 AONWeb is a cutting-edge framework that seamlessly integrates Web3 capabilities with AI functionalities, providing a robust foundation for decentralized AI Agents.
 
@@ -26,7 +26,7 @@ AONWeb is a cutting-edge framework that seamlessly integrates Web3 capabilities 
 ## Key Components
 
 ### Smart Contracts
-- `AonAgentPoint`: Agent point management
+- `AonAppPoint`: Agent point management
 - `AonRewardPoint`: Reward system management
 - `AonUser`: User identity and permissions
 - `AonAiModel`: AI model registry and management
