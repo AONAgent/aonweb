@@ -10,8 +10,8 @@ Powered by 3,000+ open-source AI models provided by AGI Open Network, AONWeb is 
 - Token management and reward systems
 - Decentralized user management
 
-### AI Capabilities
-- Integration with state-of-the-art AI models (including Stable Diffusion)
+### AI Agent Capabilities
+- Integration with 3000+ state-of-the-art open-source AI models 
 - Customizable AI parameters and configurations
 - Support for various input/output formats
 - Scalable AI execution through clustered architecture
