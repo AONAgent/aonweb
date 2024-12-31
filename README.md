@@ -1,4 +1,4 @@
-# AONWeb: Web3-Native AI Agent Framework
+# AONWeb: Full-Modality Multi-Agent Collaboration Framework
 
 AONWeb is a cutting-edge framework that seamlessly integrates Web3 capabilities with AI functionalities, providing a robust foundation for decentralized AI Agents.
 
