@@ -1,6 +1,6 @@
-# AONWeb: Full-Modality Multi-Agent Collaboration Framework
+# AONWeb: Full-Modality Multi-Agent Coordination Framework
 
-Powered by 3,000+ open-source AI models provided by AGI Open Network, AONWeb is a cutting-edge AI Agent framework that offers seamless integration, advanced collaboration, and low-code solutions to empower developers in building intelligent, full-modality AI systems.
+Powered by 3,000+ open-source AI models provided by AGI Open Network, AONWeb is a cutting-edge AI Agent framework that offers seamless integration, and advanced coordination to empower developers in building intelligent, full-modality AI systems.
 
 ## Core Features
 
